@@ -2,10 +2,9 @@
 from sqlalchemy import Column, Integer, ForeignKey
 from sqlalchemy.orm import Relationship, Session
 # our modules
-from helpers.database import DatabaseHandler
+from database import Base
 
-# helpers
-Base = DatabaseHandler.getBase()
+
 
 class SpecializedUser(Base):
     __abstract__ = True

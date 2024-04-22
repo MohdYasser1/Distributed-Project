@@ -2,10 +2,10 @@
 from sqlalchemy import Column, String, Integer, ForeignKey, Float, CheckConstraint
 from sqlalchemy.orm import relationship
 # our modules
-from helpers.database import DatabaseHandler
+from database import Base
 
 # helpers
-Base = DatabaseHandler.getBase()
+
 
 class OrderItem(Base):
     __tablename__ = "orderItems"
